@@ -2,12 +2,12 @@ from datetime import datetime, timedelta
 from icalendar import Calendar, Event
 
 calendar = Calendar()
-calendar.add('name', "KBTU Calendar")
-calendar.add('prodid', "KBTU Calendar")
+calendar.add('prodid', "-//From NurlashKO//With Love//EN")
 calendar.add('version', '2.0')
-calendar.add('summary', 'Test calendar name. Kind a long, test test.')
-calendar.add('x-wr-timezone', "Asia/Almaty")
+calendar.add('calscale', 'GREGORIAN')
 calendar.add('method', 'publish')
+calendar.add('x-wr-calname', "KBTU Calendar")
+calendar.add('x-wr-timezone', "Asia/Almaty")
 
 vevent = Event()
 
