@@ -18,7 +18,7 @@ vevent.add('dtend', datetime.now() + timedelta(hours=3))
 
 calendar.add_component(vevent)
 '''
-f = open('example.ics', 'wb')
+f = open('test.ics', 'wb')
 f.write(calendar.to_ical())
 f.close()
 
