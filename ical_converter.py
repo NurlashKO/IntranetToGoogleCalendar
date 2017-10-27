@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import datetime
 from icalendar import Calendar, Event
 
 calendar = Calendar()
@@ -9,7 +9,7 @@ calendar.add('method', 'publish')
 vevent = Event()
 
 vevent.add('summary', "test summary")
-vevent.add('dtstart', date.today())
+vevent.add('dtstart', datetime.now())
 
 calendar.add_component(vevent)
 
