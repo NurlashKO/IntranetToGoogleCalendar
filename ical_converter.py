@@ -2,10 +2,11 @@ from datetime import datetime, timedelta
 from icalendar import Calendar, Event
 
 calendar = Calendar()
+calendar.add('name', "KBTU Calendar")
 calendar.add('prodid', "KBTU Calendar")
 calendar.add('version', '2.0')
 calendar.add('summary', 'Test calendar name. Kind a long, test test.')
-calendar.add('x-wr-timezone', "Asia/Kazakhstan")
+calendar.add('x-wr-timezone', "Asia/Almaty")
 calendar.add('method', 'publish')
 
 vevent = Event()
