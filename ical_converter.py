@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from icalendar import Calendar, Event
 
 calendar = Calendar()
-calendar.add('prodid', "-//From NurlashKO//With Love//EN")
+calendar.add('prodid', "-//Google Inc//Google Calendar 70.9054//EN")
 calendar.add('version', '2.0')
 calendar.add('calscale', 'GREGORIAN')
 calendar.add('method', 'PUBLISH')
@@ -18,7 +18,7 @@ vevent.add('dtend', datetime.now() + timedelta(hours=3))
 
 calendar.add_component(vevent)
 '''
-f = open('test.ics', 'wb')
+f = open('empty.ics', 'wb')
 f.write(calendar.to_ical())
 f.close()
 
