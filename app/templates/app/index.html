@@ -1,0 +1,27 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body style="background-color: black; color: white; font-family: Inconsolata;">
+    <h1>
+      KBTU schedule to iCalendar converter
+    </h1>
+    <form method="POST">
+      {% csrf_token %}
+      <textarea name="schedule"style="width:400px;height:300px"placeholder="Put your schedule here"></textarea>
+      </br>
+      <button type="submit" style="font-size:24"> Get Calendar </button>
+    </form>
+
+    <img src="http://i0.kym-cdn.com/photos/images/original/001/018/899/936.jpg"> </img>
+    <h2> How it works?</h2>
+
+    {% load static %}
+    <img src="{% static "app/1.png" %}" alt="My image"/>
+    <img src="{% static "app/2.png" %}" alt="My image"/>
+    <img src="{% static "app/3.png" %}" alt="My image"/>
+    <img src="{% static "app/4.png" %}" alt="My image"/>
+    <img src="{% static "app/5.png" %}" alt="My image"/>
+    <img src="{% static "app/6.png" %}" alt="My image"/>
+    <img src="{% static "app/7.png" %}" alt="My image"/>
+
+</body>
