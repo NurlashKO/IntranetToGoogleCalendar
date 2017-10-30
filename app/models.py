@@ -8,7 +8,7 @@ class Schedule(models.Model):
     @classmethod
     def create(cls, text):
         if (len(Schedule.objects.all()) > 100):
-            # Lets make a small cleanup if there is too many objects.
+            # Lets make a small cleanup if there are too many objects.
             Schedule.objects.all().delete()
         schedule = Schedule(text=text)
         return schedule
