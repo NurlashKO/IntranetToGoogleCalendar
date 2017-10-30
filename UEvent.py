@@ -7,7 +7,7 @@ class UEvent:
         self.title = title.strip()
         self.weekday = week_days.index(week_delta)
         self.start =                                        \
-              week_start                                    \
+            datetime.combine(week_start, datetime.min.time()) \
             + timedelta(days=week_days.index(week_delta))   \
             + timedelta(minutes=start_time_delta)
         self.end = self.start + timedelta(minutes=duration)

@@ -19,6 +19,7 @@ for event in events:
     vevent.add('summary', event.title)
     vevent.add('dtstart', event.start)
     vevent.add('dtend', event.end)
+    vevent.add('rrule', {'freq': 'weekly'})
 
     calendar.add_component(vevent)
 
