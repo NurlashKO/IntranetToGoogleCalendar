@@ -23,7 +23,7 @@ for event in events:
 
     calendar.add_component(vevent)
 
-f = open('events.ics', 'wb')
+f = open('events_req.ics', 'wb')
 f.write(calendar.to_ical())
 f.close()
 
