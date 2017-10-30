@@ -16,7 +16,3 @@ def index(request):
 def get(request, schedule_id):
     schedule = get_object_or_404(Schedule, pk=schedule_id)
     return HttpResponse(schedule.text)
-
-def cleanup():
-    if (len(Schedule.objects.all()) > 100):
-        Schedule.objects.all().delete()
