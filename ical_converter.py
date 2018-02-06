@@ -5,7 +5,7 @@ from UEvent import UEvent
 
 
 calendar = Calendar()
-calendar.add('prodid', "-//Google Inc//Google Calendar 70.9054//EN")
+calendar.add('prodid', "-//NurlashKO Inc.//KBTU to Google Calendar//EN")
 calendar.add('version', '2.0')
 calendar.add('calscale', 'GREGORIAN')
 calendar.add('method', 'PUBLISH')
